@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Focus Admin: Table</title>
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+
+        <!-- Styles -->
+        <link href="static/admin/css/lib/font-awesome.min.css" rel="stylesheet">
+        <link href="static/admin/css/lib/themify-icons.css" rel="stylesheet">
+        <link href="static/admin/css/lib/menubar/sidebar.css" rel="stylesheet">
+        <link href="static/admin/css/lib/bootstrap.min.css" rel="stylesheet">
+        <link href="static/admin/css/lib/helper.css" rel="stylesheet">
+        <link href="static/admin/css/style.css" rel="stylesheet">
+    </head>
+    
+    <body> 
+        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+            <div class="nano">
+                <div class="nano-content">
+                    <ul>
+                        <div class="logo"><a href="index.html">
+                            <li><a href="/admindashboard"><i class="ti-dashboard"></i> Dashboard</a></li>
+                            <li><a href="/profile"><i class="ti-user"></i> Profile</a></li>  
+                            <li><a href="#"><i class="ti-plus"></i> Total Booking</a></li>
+                            <li><a href="#"><i class="ti-plus"></i> Deleted Booking</a></li>
+                            <li><a href="#"><i class="ti-plus"></i> Bill</a></li>
+                            <li><a><i class="ti-close"></i> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrap">
+            <div class="main">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-8 p-r-0 title-margin-right">
+                            <div class="page-header">
+                                <div class="page-title">
+                                    <h1 style="color:#030f27 ;">Total Registered Customer</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table border="2px" width='5px' align="center">
+            <thead>
+                <tr>
+                    <th>cus_id</th>
+                    <th>Fullname</th>
+                    <th>email_id</th>
+                    <th>password</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for data in user %}
+                <tr>
+                    <tr>
+                        <td>{{data[0]}}</td>
+                        <td>{{data[1]}}</td>
+                        <td>{{data[2]}}</td>
+                        <td>{{data[3]}}</td>
+                        <td>{{data[4]}}</td>
+                    </tr>
+                </tr>                                                                             
+            {% endfor %}
+            </tbody>
+        </table> 
+    </body>
+</html>                  
+                                    
+                            

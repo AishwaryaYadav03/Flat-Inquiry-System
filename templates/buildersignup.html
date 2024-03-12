@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+   
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<title>builder Registeration</title>
+
+<link href="static/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="login">
+<h1>builder Registeration</h1>
+<div class="msg">{{msg}}</div>
+<form action="/buildersignup" method="POST">
+    
+<label for="builder_name">
+    <i class="fas fa-user"></i>
+</label>
+<input type="text" name="builder_name" placeholder="builder_name" id="builder_name" required>
+
+<label for="builder_emailid">
+    <i class="fas fa-envelope"></i>
+</label>
+<input type="text" name="builder_emailid" placeholder="builder_emailid" id="builder_emailid" required>
+
+<label for="password">
+    <i class="fas fa-lock"></i>
+</label>
+<input type="password" name="password" placeholder="Password" pattern=".{8,}"
+ title="Password must be eight or more characters" id="password" required>
+
+<label for="builder_mobile">
+    <i class="fas fa-phone-alt"></i>
+</label>
+<input type="text" name="builder_mobile" placeholder="builder_mobile"  pattern="[0-9]{10}" 
+title="mobile number must be numbers and of 10 digits" id="phone_no" required>
+
+<label for="phone_no">
+    <i class="fas fa-phone-alt"></i>
+</label>
+<input type="text" name="builder_phone" placeholder="builder_phone"  pattern="[0-9]{8}" 
+title="Phone number must be numbers and of 8 digits" id="phone_no" required>
+
+<label for="builder_office">
+    <i class="fa fa-home "></i>
+</label>
+<input type="text" name="builder_office" placeholder="builder_officeaddress" required>
+
+<label for="builder_city">
+    <i class="fas fa-city "></i>
+</label>
+<input type="text" name="builder_city" placeholder="builder_city" required>
+
+<label for="builder_state">
+    <i class="fas fa-city "></i>
+</label>
+<input type="text" name="builder_state" placeholder="state" required>
+ 
+<label for="builder_country">
+    <i class="fas fa-flag "></i>
+</label>
+<input type="text" name="builder_country" placeholder="country" required>
+
+<div class="input-group">
+    <h4>Upload logo image</h4>
+    <input type="file" id="input_303" name="logo" class="form-uplod" data-imagevalidate="yes" data-file-accept="jpg,jpeg,pnj" data-file-maxsize="10240" data-file-minsize="0" data-file-limit="0" data-component="fileupload" placeholder="logo_image"required>
+</div>
+
+<input type="submit" value="Register">
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <section id="menu" class="menu section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                    {% for data1 in data %}
+
+                    <div class="col-lg-6 menu-item filter-starters">
+                        <h1>{{data1[2]}}</h1>
+                        <div class="portfolio-img">
+                            <center><img src="static/img/{{data1[8]}}" width="400" height="400"></center>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            {% endfor %}
+        </section>
+    </body>
+</html>

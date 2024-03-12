@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-name" content="focus" />
+        <title> Builder Dashboard</title>
+        <!-- Standard -->
+        <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+        <!-- Standard iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+        <!-- Standard iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+        <!-- Styles -->
+        <link href="static/admin/css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+        <link href="static/admin/css/lib/chartist/chartist.min.css" rel="stylesheet">
+        <link href="static/admin/css/lib/font-awesome.min.css" rel="stylesheet">
+        <link href="static/admin/css/lib/themify-icons.css" rel="stylesheet">
+        <link href="static/admin/css/lib/owl.carousel.min.css" rel="stylesheet" />
+        <link href="static/admin/css/lib/owl.theme.default.min.css" rel="stylesheet" />
+        <link href="static/admin/css/lib/weather-icons.css" rel="stylesheet" />
+        <link href="static/admin/css/lib/menubar/sidebar.css" rel="stylesheet">
+        <link href="static/admin/css/lib/bootstrap.min.css" rel="stylesheet">
+        <link href="static/admin/css/lib/helper.css" rel="stylesheet">
+        <link href="static/admin/css/style.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+            <div class="nano">
+                <div class="nano-content">
+                    <ul>
+                        <div class="logo"><a href="index.html">
+
+                            <li><a href="admindashboard"><i class="ti-dashboard"></i> Dashboard</a></li>
+                            <li><a href="profile"><i class="ti-user"></i> Profile</a></li>  
+                            <li><a href="scheme"><i class="ti-plus"></i> Add Schemes</a></li>
+                            <li><a href="flat"><i class="ti-plus"></i> Add Flat</a></li>
+                            <li><a href="buildersignin"><i class="ti-close"></i> Logout</a></li>
+                        </div>    
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <table border="9px" align="center">
+            <thead>
+                <tr>
+                    <th> builder_id</th>
+                    <th> builder_name</th>
+                    <th> builder_emailid </th>
+                    <th> password</th>
+                    <th> builder_mobile</th>
+                    <th> builder_phone</th>
+                    <th> builder_office</th>
+                    <th> builder_city</th>
+                    <th> builder_state</th>
+                    <th> builder_country</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for data in user %}
+            <tr>
+                <td>{{data[0]}}</td>
+                <td>{{data[1]}}</td>
+                <td>{{data[2]}}</td>
+                <td>{{data[3]}}</td>
+                <td>{{data[4]}}</td>
+                <td>{{data[5]}}</td>
+                <td>{{data[6]}}</td>
+                <td>{{data[7]}}</td>
+                <td>{{data[8]}}</td>
+                <td>{{data[9]}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

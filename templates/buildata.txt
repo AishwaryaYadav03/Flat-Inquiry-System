@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DreamHome - House search portal</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Construction Company Website Template" name="keywords">
+        <meta content="Construction Company Website Template" name="description">
+    </head>
+    
+    <body>
+        <table border="1px" align="center">
+            <thead>
+                <tr>
+                    <th>cus_id</th>
+                    <th>Fullname</th>
+                    <th>email_id</th>
+                    <th>password</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for data in user %}
+            <tr>
+                <td>{{data[0]}}</td>
+                <td>{{data[1]}}</td>
+                <td>{{data[2]}}</td>
+                <td>{{data[3]}}</td>
+                <td>{{data[4]}}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

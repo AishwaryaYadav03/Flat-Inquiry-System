@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+   
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<title>BuilderLogin</title>
+
+<link href="static/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="login">
+<h1>Builder Login</h1>
+<div class="msg">{{msg}}</div>
+<form action="buildersignin" method="POST">
+    
+<label for="email_id">
+<i class="fas fa-user"></i>
+</label>
+<input type="text" name="builder_emailid" placeholder="builder_emailid" id="builder_emailid" required>
+<label for="password">
+<i class="fas fa-lock"></i>
+</label>
+<input type="password" name="password" placeholder="Password" id="password" required>
+<div class="signup-link">
+    <a href="/builderforget">Forget Password</a>
+    <a href="/">Back</a>
+</div>
+<input type="submit" value="Login">
+<div class="signup-link">Don't have a password then <a href="/buildersignup">Signup Here</a></div>
+
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+   
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<title>Monthwise Report</title>
+
+<link href="static/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="login">
+<h1>Monthwise Report</h1>
+<div class="msg">{{msg}}</div>
+<form action="/inquierydate" method="POST">
+    
+<!-- <label for="type">Chose Date </label><br> -->
+<div>
+    <div><p>Chose  first date Date  </p><p>  </p><br></div>
+<!-- <label for="type">Chose  first date Date </label><br> -->
+
+    <input type="date" name="fdate" placeholder="Enter First Date"  required><br>
+</div>
+<!-- <label for="type">Chose  last date Date </label><br> -->
+<div>
+    <div><p>Chose  last date Date</p><br></div>
+    <input type="date" name="tdate" placeholder="Enter last Date"  required><br>
+    
+</div>
+
+<input type="submit" value="Submit">
+<div class="signup-link"> <a href="/builderdashboard">Back To Dashboard</a></div>
+</form>
+</div>
+</body>
+</html>

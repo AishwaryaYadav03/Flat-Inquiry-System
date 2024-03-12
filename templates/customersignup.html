@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+   
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<title>Customer Login</title>
+
+<link href="static/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="login">
+<h1>Customer Registeration</h1>
+<div class="msg">{{msg}}</div>
+<form action="/customersignup" method="POST">
+    
+<label for="fullname">
+    <i class="fas fa-user"></i>
+</label>
+<input type="text" name="fullname" placeholder="fullname" id="fullname" required>
+
+<label for="phone_no">
+    <i class="fas fa-phone-alt"></i>
+</label>
+<input type="text" name="phone_no" placeholder="phone_no"  pattern="[0-9]{10}" 
+title="Phone number must be numbers and of 10 digits" id="phone_no" required>
+
+<label for="email_id">
+    <i class="fas fa-envelope"></i>
+</label>
+<input type="text" name="email_id" placeholder="email_id"  id="email_id" required>
+
+<label for="password">
+    <i class="fas fa-lock"></i>
+</label>
+<input type="password" name="password" placeholder="Password" pattern=".{8,}" title="Password must be eight or more characters" id="password" required>
+
+
+    
+<input type="submit" value="Register">
+</form>
+</div>
+</body>
+</html>

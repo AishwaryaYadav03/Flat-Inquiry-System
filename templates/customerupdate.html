@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+   
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+<title>Customer Profile Update</title>
+
+<link href="static/css/all.css" rel="stylesheet">
+</head>
+<body>
+<div class="login">
+<h1>customer Profile Update</h1>
+<div class="msg">{{msg}}</div>
+<form action="/customerupdate" method="POST">
+    
+<!-- <label for="builder_name">
+    <i class="fas fa-user"></i>
+</label>
+<input type="text" name="builder_name" placeholder="builder_name" id="builder_name" required>
+
+<label for="builder_emailid">
+    <i class="fas fa-envelope"></i>
+</label>
+<input type="text" name="builder_emailid" placeholder="builder_emailid" id="builder_emailid" required> -->
+
+
+
+<label for="phone_no">
+    <i class="fas fa-phone-alt"></i>
+</label>
+<input type="text" name="phone_no" placeholder="phone_no"  pattern="[0-9]{10}" 
+title="mobile number must be numbers and of 10 digits" id="phone_no" required>
+
+<label for="fullname">
+    <i class="fas fa-phone-alt"></i>
+</label>
+<input type="text" name="fullname" placeholder="fullname"   
+ id="fullname" required>
+
+<!-- <label for="builder_office">
+    <i class="fa fa-home "></i>
+</label>
+<input type="text" name="builder_office" placeholder="builder_officeaddress" required> -->
+
+<!-- <label for="builder_city">
+    <i class="fas fa-city "></i>
+</label>
+<input type="text" name="builder_city" placeholder="builder_city" required>
+
+<label for="builder_state">
+    <i class="fas fa-city "></i>
+</label>
+<input type="text" name="builder_state" placeholder="state" required>
+ 
+<label for="builder_country">
+    <i class="fas fa-flag "></i>
+</label>
+<input type="text" name="builder_country" placeholder="country" required> -->
+
+<input type="submit" value="Update">
+</form>
+</div>
+
+</body>
+</html>

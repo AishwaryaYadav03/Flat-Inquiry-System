@@ -1,0 +1,25 @@
+<html>
+    <style>
+        div.container {
+    width: 100%;
+}
+
+ div.container img {
+    width: 49%;
+ }
+    </style>
+<body>
+    {% for data1 in data %}
+    {% set s=namespace(c=0) %}
+    <div class="container">
+      {% for data2 in data1[8] %}
+        {% if s.c==0 %}
+        <img src="static/img/{{data1[8]}}">
+        {% set s.c=1 %}
+        {% endif %}
+      {% endfor%}
+       
+    </div>
+    {% endfor %}
+</body>
+</html>
